@@ -46,7 +46,7 @@ export const updateAction = async ({request, params}) => {
     }
 
     // request to update athlete
-    await fetch (url + id, {
+    await fetch(url + id, {
         method: 'put',
         headers: {
             'Content-Type': 'application/json'
