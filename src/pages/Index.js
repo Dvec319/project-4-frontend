@@ -1,5 +1,13 @@
+import { useLoaderData } from "react-router-dom";
+import Post from "../components/Post";
 function Index(props) {
-	return <div>Index</div>;
+
+    // grabbing the loaderdata
+    const athletes = useLoaderData()
+
+	return (
+        athletes.map((athlete) => <Post key={athlete.id} post={athlete}/>)
+    );
 }
 
 export default Index;
