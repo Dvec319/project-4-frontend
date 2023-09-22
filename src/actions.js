@@ -57,3 +57,17 @@ export const updateAction = async ({request, params}) => {
     // redirect to show page
     return redirect(`/athletes/post/${id}`)
 }
+
+// Delete Action
+export const deleteAction = async ({params}) => {
+    // grabbing id
+    const id = params.id
+
+    // making a delete request
+    await fetch(url + id, {
+        method: 'delete',
+    })
+
+    // redirect back to index
+    return redirect('/athletes/')
+}
