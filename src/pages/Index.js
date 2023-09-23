@@ -15,6 +15,7 @@ function Index(props) {
             <input type="text" name='team' placeholder="Team" required/>
             <input type="text" name="position" placeholder="Position" required/>
             <input type="number" name="year" placeholder="Year Started" required/>
+            <input type='text' name="image" placeholder="Image of Athlete" required/>
             <button>Add new Athlete</button>
         </Form>
         {athletes.map((athlete) => <Post key={athlete.id} post={athlete}/>)}

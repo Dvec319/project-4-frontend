@@ -13,7 +13,8 @@ export const createAction = async ({request}) => {
         sport: formData.get('sport'),
         team: formData.get('team'),
         position: formData.get('position'),
-        year: formData.get('year')
+        year: formData.get('year'),
+        image: formData.get('image')
     }
 
     // request to create a new athlete
@@ -42,7 +43,8 @@ export const updateAction = async ({request, params}) => {
         sport: formData.get('sport'),
         team: formData.get('team'),
         position: formData.get('position'),
-        year: formData.get('year')
+        year: formData.get('year'),
+        image: formData.get('image')
     }
     console.log(url+id)
     // request to update athlete
