@@ -7,7 +7,7 @@ import { createAction, deleteAction, updateAction } from './actions';
 
 const router = createBrowserRouter(createRoutesFromElements(
     <>
-        <Route path='/athletes' element={<App/>}>
+        <Route path='/' element={<App/>}>
             <Route path='' element={<Index/>} loader={indexLoader}/>
             <Route path='athletes/post/:id' element={<Show/>} loader={showLoader}/>
             <Route path='create' action={createAction}/>
