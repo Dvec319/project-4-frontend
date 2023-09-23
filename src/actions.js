@@ -26,7 +26,7 @@ export const createAction = async ({request}) => {
     })
 
     // redirect to index
-    return redirect('/athletes/')
+    return redirect('/')
 }
 
 // Update Action
@@ -44,9 +44,9 @@ export const updateAction = async ({request, params}) => {
         position: formData.get('position'),
         year: formData.get('year')
     }
-
+    console.log(url+id)
     // request to update athlete
-    await fetch(url + id, {
+    await fetch(url + id + '/', {
         method: 'put',
         headers: {
             'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ export const updateAction = async ({request, params}) => {
     })
 
     // redirect to show page
-    return redirect(`/athletes/post/${id}`)
+    return redirect(`/post/${id}`)
 }
 
 // Delete Action
@@ -69,5 +69,5 @@ export const deleteAction = async ({params}) => {
     })
 
     // redirect back to index
-    return redirect('/athletes/')
+    return redirect('/')
 }

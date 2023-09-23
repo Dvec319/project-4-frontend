@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Post({post}) {
 	return <div>
-        <Link to={`/athletes/post/${post.id}`}>
+        <Link to={`/post/${post.id}`}>
             <h1>{post.name}</h1>
             <h2>{post.sport}</h2>
         </Link>
