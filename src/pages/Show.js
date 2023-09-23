@@ -24,7 +24,7 @@ function Show(props) {
         <Form method="delete" action={`/delete/${athlete.id}`}>
             <button>Delete {athlete.name}</button>
         </Form>
-        <Link to='/'><button>Back Home</button></Link>
+        <Link to='/athletes/'><button>Back Home</button></Link>
     </div>;
 }
 

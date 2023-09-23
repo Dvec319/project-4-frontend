@@ -55,7 +55,7 @@ export const updateAction = async ({request, params}) => {
     })
 
     // redirect to show page
-    return redirect(`/post/${id}`)
+    return redirect(`/athletes/post/${id}`)
 }
 
 // Delete Action
