@@ -36,16 +36,25 @@ function Index(props) {
 
 	return (
         <>
-        <h2>Add an Athlete!</h2>
-        <Form method="post" action="/create" onSubmit={handleSubmit}>
-            <input type="text" name="name" placeholder="Name"  onChange={handleChange} required/>
-            <input type="number" name="age" placeholder="Age" onChange={handleChange} required/>
-            <input type="text" name="sport"  placeholder="Sport" onChange={handleChange} required/>
-            <input type="text" name='team' placeholder="Team" onChange={handleChange} required/>
-            <input type="text" name="position" placeholder="Position" onChange={handleChange} required/>
-            <input type="number" name="year" placeholder="Year Started" onChange={handleChange} required/>
-            <input type='text' name="image" placeholder="Image of Athlete" onChange={handleChange} required/>
-            <button>Add new Athlete</button>
+        <h2 className="h2Index">Add an Athlete!</h2>
+        <Form method="post" action="/create" onSubmit={handleSubmit} className="createForm">
+            <fieldset>
+                <label className="createLabel" for='nameField'>Name</label>
+                <input type="text" name="name" placeholder="Name"  onChange={handleChange} id="nameField" className="createInput" required/>
+                <label className="createLabel" for='ageField'>Age</label>
+                <input type="number" name="age" placeholder="Age" onChange={handleChange} id="ageField" required/>
+                <label className="createLabel" for='sportField'>Sport</label>
+                <input type="text" name="sport"  placeholder="Sport" onChange={handleChange} id="sportField" required/>
+                <label className="createLabel" for='teamField'>Team</label>
+                <input type="text" name='team' placeholder="Team" onChange={handleChange} id="teamField" required/>
+                <label className="createLabel" for='positionField'>Position</label>
+                <input type="text" name="position" placeholder="Position" onChange={handleChange} id="positionField" required/>
+                <label className="createLabel" for='yearField'>Year</label>
+                <input type="number" name="year" placeholder="Year Started" onChange={handleChange} id="yearField" required/>
+                <label className="createLabel" for='imageField'>Image</label>
+                <input type='text' name="image" placeholder="Image of Athlete" onChange={handleChange} id="imageField" required/>
+                <button className="buttonBlack">Add new Athlete</button>
+            </fieldset>
         </Form>
         {athletes.map((athlete) => <Post key={athlete.id} post={athlete}/>)}
         </>

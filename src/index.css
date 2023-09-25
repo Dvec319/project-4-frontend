@@ -5,9 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../public/images/football.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 40.0rem) {
+  .createForm, .updateForm {
+      display: flex;
+      justify-content: center;
+    }
+
+  .h1Post:hover {
+    color: black;
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+  img {
+    width: 700px;
+    height: 600px;
+  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.h1Post {
+  color: white;
+}
+
+.h1Post:hover {
+  color: black;
+  font-size: rem;
+}
+
+.h2Index {
+  color: white;
+}
+
+#nameField, #ageField, #sportField, #teamField, #positionField, #yearField, #imageField {
+  font-size: large;
+  background-color: white;
+}
+
+::placeholder {
+  color: black;
+}
+
+.createLabel, .updateLabel {
+  text-align: left;
+  color: orangered;
+  font-weight: bold;
+  font-size: 2.0rem;
+}
+
+.buttonBlack {
+  background-color: black;
+  border-color: black;
+  font-size: 1.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 2rem;
+}
+
+.showDisplay {
+  color: black;
+  font-weight: bold;
 }
