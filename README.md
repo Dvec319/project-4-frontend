@@ -16,6 +16,9 @@ Welcome to Favorite Athlete Holder! I created this project because I've recently
 
 ## Finished Site
 
+- ![Index](https://i.imgur.com/DJ3aMuT.png)
+- ![Show](https://i.imgur.com/DDB036Q.png)
+- ![Show-mobile](https://i.imgur.com/VvWyH8q.png)
 
 ## Future Enhancements
 
