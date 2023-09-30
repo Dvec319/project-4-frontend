@@ -36,6 +36,7 @@ code {
 
 .h1Post {
   color: white;
+  background-color: orangered;
 }
 
 .h1Post:hover {
@@ -75,4 +76,10 @@ code {
 .showDisplay {
   color: black;
   font-weight: bold;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

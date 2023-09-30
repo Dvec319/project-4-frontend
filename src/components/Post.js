@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Post({post}) {
-	return <div>
+	return <div className="postDiv">
         <Link to={`/athletes/post/${post.id}`}>
             <h1 className="h1Post">{post.name}</h1>
         </Link>
