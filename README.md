@@ -2,7 +2,7 @@
 
 - **Project Name:** Favorite Athlete Holder
 - **Project By:** Michael Delvecchio
-- [**LINK TO DEPLOYED SITE**]
+- [**LINK TO DEPLOYED SITE**](https://favorite-athlete-holder-frontend.onrender.com/)
 - **List of Technologies used:** React, React Router Dom
 
 ## Description
